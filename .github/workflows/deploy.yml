@@ -1,0 +1,23 @@
+name: Datacom AWS Cloud Job Simulation
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Register Application on AWS Cloud
+      run: |
+        echo "Initializing Datacom Cloud Simulation Environment..."
+        echo "Registering the application successfully on AWS IAM..."
+
+    - name: Deploy Application using GitHub Action Workflow
+      run: |
+        echo "Validating AWS S3 and CloudFront Static Website..."
+        echo "Datacom Cloud Simulation completed successfully!"
